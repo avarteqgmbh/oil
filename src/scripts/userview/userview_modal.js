@@ -21,6 +21,7 @@ import { oilOptIn, oilPowerOptIn } from './userview_optin';
 import { deActivatePowerOptIn } from '../core/core_poi';
 import { oilDefaultTemplate } from './view/oil.default';
 import { oilNoCookiesTemplate } from './view/oil.no.cookies';
+import { setupOverviewHandler } from './view/oil.default';
 import * as AdvancedSettingsStandard from './view/oil.advanced.settings.standard';
 import * as AdvancedSettingsTabs from './view/oil.advanced.settings.tabs';
 import { logError, logInfo } from '../core/core_log';
@@ -123,7 +124,7 @@ export function handleOptIn() {
   animateOptInButton();
 }
 
-function onOptInComplete() {
+export function onOptInComplete() {
   let commandCollectionExecutor = getGlobalOilObject('commandCollectionExecutor');
   if (commandCollectionExecutor) {
     commandCollectionExecutor();
@@ -312,7 +313,7 @@ function animateOptInButton() {
   }
 }
 
-function handleSoiOptIn() {
+export function handleSoiOptIn() {
   let privacySetting = getPrivacySettings();
   logInfo('Handling SOI with settings: ', privacySetting);
   trackPrivacySettings(privacySetting);
@@ -381,4 +382,5 @@ function addOilHandlers(nodes) {
   addEventListenersToDOMList(nodes.companyList, handleCompanyList);
   addEventListenersToDOMList(nodes.thirdPartyList, handleThirdPartyList);
   attachCpcEventHandlers();
+  setupOverviewHandler();
 }

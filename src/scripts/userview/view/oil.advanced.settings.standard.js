@@ -178,7 +178,7 @@ const ActivateButtonSnippet = () => {
   `
 };
 
-const buildPurposeEntries = (list) => {
+export const buildPurposeEntries = (list) => {
   return list.map(purpose => PurposeContainerSnippet({
     id: purpose.id,
     header: getLabelWithDefault(`label_cpc_purpose_${formatPurposeId(purpose.id)}_text`, purpose.name || `Error: Missing text for purpose with id ${purpose.id}!`),
@@ -187,7 +187,7 @@ const buildPurposeEntries = (list) => {
   })).join('');
 };
 
-const formatPurposeId = (id) => {
+export const formatPurposeId = (id) => {
   return id < 10 ? `0${id}` : id;
 };
 

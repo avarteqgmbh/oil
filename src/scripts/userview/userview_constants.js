@@ -1,6 +1,8 @@
 export const OIL_LABELS = {
   ATTR_LABEL_INTRO_HEADING: 'label_intro_heading',
   ATTR_LABEL_INTRO: 'label_intro',
+  ATTR_LABEL_PURPOSES_OVERVIEW: 'label_purposes_overview',
+  ATTR_LABEL_ACTIVATE_AND_CONFIRM_ALL: 'label_activate_and_confirm_all',
   ATTR_LABEL_BUTTON_YES: 'label_button_yes',
   ATTR_LABEL_BUTTON_BACK: 'label_button_back',
   ATTR_LABEL_BUTTON_ADVANCED_SETTINGS: 'label_button_advanced_settings',
