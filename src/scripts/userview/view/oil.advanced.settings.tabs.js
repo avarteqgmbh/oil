@@ -188,7 +188,7 @@ const buildVendorEntry = (vendor) => {
                 <span class='as-oil-third-party-name'>${vendor.name}</span>
             </span>
             <div class='as-oil-third-party-toggle-part' style='display: none;'>
-              <a class='as-oil-third-party-link' href='${vendor.policyUrl}'>${vendor.policyUrl}</a>
+              <a class='as-oil-third-party-link' href='${vendor.policyUrl}' target='_blank'>${vendor.policyUrl}</a>
             </div>
           </div>
         `;
