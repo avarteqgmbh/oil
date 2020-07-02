@@ -142,7 +142,7 @@ export function getLocaleUrl() {
 }
 
 export function getIabVendorListUrl() {
-  return getConfigValue(OIL_CONFIG.ATTR_IAB_VENDOR_LIST_URL, 'https://vendorlist.consensu.org/vendorlist.json');
+  return getConfigValue(OIL_CONFIG.ATTR_IAB_VENDOR_LIST_URL, '/iab-vendor.json');
 }
 
 export function getIabVendorBlacklist() {

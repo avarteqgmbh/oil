@@ -6,7 +6,7 @@ export const DEFAULT_VENDOR_LIST = {
   vendorListVersion: 36,
   maxVendorId: 380,
   lastUpdated: '2018-05-30T16:00:15Z',
-  purposeIds: [1, 2, 3, 4, 5]
+  purposeIds: [1]
 };
 
 export const DEFAULT_CUSTOM_VENDOR_LIST = {
